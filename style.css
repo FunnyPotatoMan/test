@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('lexendDeca.ttf') format(truetype);
+}
+
+body {
+    background-color: #E9DDC8;
+    margin: 0;
+}
+
+
+
+#navbar {
+    background-color: #6A3A3B;
+    padding: 15px 6vw 15px 6vw;
+    margin: 0;
+    border: 10px solid #AE2D29;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+}
+
+.button-border {
+    background: #E9DDC8;
+    background-origin: border-box;
+    border: 5px double transparent;
+    display: inline-flex;
+    border-radius: 100vw;
+    margin: 0 3vw 0 3vw;
+    transition: opacity 0.5s ease;
+    opacity: 0.45;
+}
+
+.button-border:hover {
+    background-image: linear-gradient(to right, #F17821, #F1A92F);
+    opacity: 1;
+}
+
+.button-content {
+    background-color: #E9DDC8;
+    padding: 7.5px;
+    border-radius: 100vw;
+    display: table-cell;
+    text-align: center;
+    vertical-align: center;
+    font-family: 'Lexend Deca', Helvetica;
+}
+
+#navbuttons {
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+div {
+    margin: 0;
+}
+
+.title {
+    background-color: #1C4D67;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#title {
+    color: #78C1A9;
+    text-align: center;
+    font-family: 'Lexend Deca', Helvetica;
+    margin: 0;
+    padding: 1rem 0 0 0;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    color: #78C1A9;
+    text-align: center;
+    font-family: 'Lexend Deca', Helvetica;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+#navbuttons a {
+    color: black;
+}
+
+
+
+#contact {
+    background-color: #6A3A3B;
+}
+
+#form-box {
+    background-color: #E9DDC8;
+    border: 5px solid #AE2D29;
+    margin: 5vh 20vw 5vh 20vw;
+    border-radius: 30px;
+    padding: 0 3vw 7.5vh 3vw;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-family: 'Lexend Deca', Helvetica;
+}
+
+#contact #navbar {
+    border: 10px double transparent;
+}
+
+#submit {
+    background-color: #1C4D67;
+    border: 5px solid transparent;
+    color: #78C1A9;
+    padding: 5px;
+    border-radius: 100vw;
+    transition: border .2s;
+}
+
+#submit:hover {
+    border: 5px solid #78C1A9;
+    transition: border .2s;
+}

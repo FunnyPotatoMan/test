@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contact Form
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Logo.png">
+    </head>
+    <body id="contact">
+        <div id="navbar">
+            <ul id="navbuttons">
+                <li>
+                    <a href="index.html">
+                        <div class="button-border">
+                            <div class="button-content">
+                                Real Homepage
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-2.html">
+                        <div class="button-border">
+                            <div class="button-content">
+                                HTML Page 2
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-3.html">
+                        <div class="button-border">
+                            <div class="button-content">
+                                HTML Page 3
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-4.html">
+                        <div class="button-border">
+                            <div class="button-content">
+                                HTML Page 4
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="form-box">
+            <form id="form">
+                <h2>Contact Me Here</h2>
+                <lable for="name">Full Name:</lable>
+                    <input type="text" id="name">
+                <br>
+                <p></p>
+                <lable for="email">E-Mail Address</lable>
+                    <input type="text" id="email">
+                <br>
+                <p></p>
+                <lable for="message">Message</lable>
+                    <textarea id="message"></textarea>
+                <br>
+                <p></p>
+                <input type="submit" value="Send Message" id="submit">
+            </form>
+        </div>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                publicKey: "uoUB84FgdnXapL9m0",
+                });
+            })();
+        </script>
+        <script>
+         var form = document.getElementById('form');
+            var templateParams = {
+              from_name: document.getElementById('name').value,
+              message: document.getElementById('message').value,
+            };
+            
+            emailjs.send('service_xszpbeb', 'template_txj88nm', templateParams).then(
+              (response) => {
+                console.log('SUCCESS!', response.status, response.text);
+              },
+              (error) => {
+                console.log('FAILED...', error);
+              },
+            );
+        </script>
+    </body>
+</html>
