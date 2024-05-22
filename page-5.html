@@ -86,17 +86,17 @@
                 var from = document.getElementById('email').value;
 
                 var templateParams = {
-              from_name: name,
-              message: message,
-              from_address: from,
+                from_name: name,
+                message: message,
+                from_address: from,
             };};
-                emailjs.send('service_xszpbeb', 'template_txj88nm', templateParams).then(
-              (response) => {
-                console.log('SUCCESS!', response.status, response.text);
-              };
-              (error) => {
-                console.log('FAILED...', error);
-              };
+            emailjs.send('service_xszpbeb', 'template_txj88nm', templateParams).then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                };
+                (error) => {
+                    console.log('FAILED...', error);
+                };
             );
         </script>
     </body>
