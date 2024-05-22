@@ -78,9 +78,13 @@
         </script>
         <script>
          var form = document.getElementById('form');
+            var name = document.getElementById('name');
+            var message = document.getElementById('message');
+            var from = document.getElementById('email');
             var templateParams = {
-              from_name: 'test',
-              message: 'test message 1',
+              from_name: name,
+              message: message,
+              from_adress: from,
             };
             
             emailjs.send('service_xszpbeb', 'template_txj88nm', templateParams).then(
