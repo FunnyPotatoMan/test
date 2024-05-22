@@ -89,8 +89,7 @@
               from_name: name,
               message: message,
               from_adress: from,
-            };
-
+            };};
                 emailjs.send('service_xszpbeb', 'template_txj88nm', templateParams).then(
               (response) => {
                 console.log('SUCCESS!', response.status, response.text);
@@ -99,7 +98,6 @@
                 console.log('FAILED...', error);
               };
             );
-            };
         </script>
     </body>
 </html>
